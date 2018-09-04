@@ -1,0 +1,68 @@
+<!--
+
+    Copyright (C) 2009-2017 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<View controllerName="ui.s2p.mm.requisition.maintain.s1.controller.Account_Asisgnment_Detail" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:semantic="sap.m.semantic" xmlns:smartForm="sap.ui.comp.smartform" xmlns="sap.m">
+	<semantic:FullscreenPage class="sapUiFioriObjectPage" enableScrolling="true" height="100%" id="page" navButtonPress="onBack"
+		showNavButton="true" title="{i18n>accountDetails}">
+		<semantic:customHeaderContent>
+			<!--        <Button class="sapUiSmallMarginEnd" enabled="true" icon="sap-icon://cart" id="btnCart" text="" tooltip="{i18n]CART}" type="Emphasized"/>-->
+		</semantic:customHeaderContent>
+		<semantic:content>
+			<l:Grid class="sapUiMediumMarginBeginEnd" defaultSpan="L12 M12 S12" id="idPanelAttachments" width="auto">
+				<l:content>
+					<f:SimpleForm id="idSimpleFormAccounting" layout="ResponsiveGridLayout">
+						<f:content>
+							<core:Fragment fragmentName="ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.fragment.AccountingDetailsCustom" type="XML"/>
+							<Label text="FDVU kontering">
+								<layoutData>
+									<l:GridData span="L4 M4 S12"/>
+								</layoutData>
+							</Label>
+							<Input id="idFDVUInput" showValueHelp="true" valueHelpRequest="onValueHelpPressed">
+								<layoutData>
+									<l:GridData span="L6 M6 S12"/>
+								</layoutData>
+							</Input>
+							<Label text="Bygningsdel">
+								<layoutData>
+									<l:GridData span="L4 M4 S12"/>
+								</layoutData>
+							</Label>
+							<Input id="idBYGInput" showValueHelp="true" valueHelpRequest="onValueHelpPressed">
+								<layoutData>
+									<l:GridData span="L6 M6 S12"/>
+								</layoutData>
+							</Input>
+							<Label text="Alt. funksjon">
+								<layoutData>
+									<l:GridData span="L4 M4 S12"/>
+								</layoutData>
+							</Label>
+							<Input id="idSEGMInput" showValueHelp="true" valueHelpRequest="onValueHelpPressed">
+								<layoutData>
+									<l:GridData span="L6 M6 S12" />
+								</layoutData>
+							</Input>
+							<Label text="Periodisering">
+								<layoutData>
+									<l:GridData span="L4 M4 S12"/>
+								</layoutData>
+							</Label>
+							<Input id="idPRDInput" showValueHelp="true" valueHelpRequest="onValueHelpPressed">
+								<layoutData>
+									<l:GridData span="L6 M6 S12" />
+								</layoutData>
+							</Input>
+						</f:content>
+					</f:SimpleForm>
+				</l:content>
+			</l:Grid>
+		</semantic:content>
+		<semantic:customFooterContent>
+			<!--<Button press="onPressSave" text="{i18n>save}" type="Emphasized"/>-->
+		</semantic:customFooterContent>
+	</semantic:FullscreenPage>
+</View>

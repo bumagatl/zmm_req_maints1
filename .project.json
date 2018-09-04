@@ -1,0 +1,69 @@
+{
+  "mockpreview": {
+    "mockUri": "",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "FOD",
+    "name": "ZMM_REQ_MAINTS1"
+  },
+  "extensibility": {
+    "controllers": {
+      "Account_Asisgnment_Detail": "MM_REQ_MAINTS1%2fcontroller%2fAccount_Asisgnment_Detail.controller.js",
+      "App": "MM_REQ_MAINTS1%2fcontroller%2fApp.controller.js",
+      "CartOverview": "MM_REQ_MAINTS1%2fcontroller%2fCartOverview.controller.js",
+      "Freetext": "MM_REQ_MAINTS1%2fcontroller%2fFreetext.controller.js",
+      "ItemDetails": "MM_REQ_MAINTS1%2fcontroller%2fItemDetails.controller.js",
+      "ProductDetails": "MM_REQ_MAINTS1%2fcontroller%2fProductDetails.controller.js",
+      "PurReqList": "MM_REQ_MAINTS1%2fcontroller%2fPurReqList.controller.js",
+      "Search": "MM_REQ_MAINTS1%2fcontroller%2fSearch.controller.js"
+    },
+    "views": {
+      "Account_Asisgnment_Detail": "MM_REQ_MAINTS1%2fview%2fAccount_Asisgnment_Detail.view.xml",
+      "App": "MM_REQ_MAINTS1%2fview%2fApp.view.xml",
+      "CartOverview": "MM_REQ_MAINTS1%2fview%2fCartOverview.view.xml",
+      "Freetext": "MM_REQ_MAINTS1%2fview%2fFreetext.view.xml",
+      "ItemDetails": "MM_REQ_MAINTS1%2fview%2fItemDetails.view.xml",
+      "NotFound": "MM_REQ_MAINTS1%2fview%2fNotFound.view.xml",
+      "Object": "MM_REQ_MAINTS1%2fview%2fObject.view.xml",
+      "ObjectNotFound": "MM_REQ_MAINTS1%2fview%2fObjectNotFound.view.xml",
+      "ProductDetails": "MM_REQ_MAINTS1%2fview%2fProductDetails.view.xml",
+      "PurReqList": "MM_REQ_MAINTS1%2fview%2fPurReqList.view.xml",
+      "Search": "MM_REQ_MAINTS1%2fview%2fSearch.view.xml"
+    },
+    "fragments": {
+      "AccountAssignment": "MM_REQ_MAINTS1%2ffragment%2fAccountAssignment.fragment.xml",
+      "AccountingDetails": "MM_REQ_MAINTS1%2ffragment%2fAccountingDetails.fragment.xml",
+      "Attachment": "MM_REQ_MAINTS1%2ffragment%2fAttachment.fragment.xml",
+      "BusinessProcess": "MM_REQ_MAINTS1%2ffragment%2fBusinessProcess.fragment.xml",
+      "ItemStatus": "MM_REQ_MAINTS1%2ffragment%2fItemStatus.fragment.xml",
+      "PRHistory": "MM_REQ_MAINTS1%2ffragment%2fPRHistory.fragment.xml",
+      "PopOver": "MM_REQ_MAINTS1%2ffragment%2fPopOver.fragment.xml",
+      "StatusInPR": "MM_REQ_MAINTS1%2ffragment%2fStatusInPR.fragment.xml",
+      "sFinAccountAssignment": "MM_REQ_MAINTS1%2ffragment%2fsFinAccountAssignment.fragment.xml",
+      "AddReview": "MM_REQ_MAINTS1%2fview%2fAddReview.fragment.xml",
+      "AssignedSupplier": "MM_REQ_MAINTS1%2fview%2fAssignedSupplier.fragment.xml",
+      "CatalogGrid": "MM_REQ_MAINTS1%2fview%2fCatalogGrid.fragment.xml",
+      "CatalogList": "MM_REQ_MAINTS1%2fview%2fCatalogList.fragment.xml",
+      "FilterSearch": "MM_REQ_MAINTS1%2fview%2fFilterSearch.fragment.xml",
+      "MassChange": "MM_REQ_MAINTS1%2fview%2fMassChange.fragment.xml",
+      "NoserachResult": "MM_REQ_MAINTS1%2fview%2fNoserachResult.fragment.xml",
+      "PopoverCart": "MM_REQ_MAINTS1%2fview%2fPopoverCart.fragment.xml",
+      "PriceRange": "MM_REQ_MAINTS1%2fview%2fPriceRange.fragment.xml",
+      "SearchResults": "MM_REQ_MAINTS1%2fview%2fSearchResults.fragment.xml",
+      "SourceOfSupply": "MM_REQ_MAINTS1%2fview%2fSourceOfSupply.fragment.xml",
+      "Supplier": "MM_REQ_MAINTS1%2fview%2fSupplier.fragment.xml",
+      "approverBusinessCard": "MM_REQ_MAINTS1%2fview%2fapproverBusinessCard.fragment.xml",
+      "imgDialog": "MM_REQ_MAINTS1%2fview%2fimgDialog.fragment.xml"
+    },
+    "type": "abaprep",
+    "shouldLinkComponentToManifest": true,
+    "component": "MM_REQ_MAINTS1%2fComponent.js",
+    "manifest": "MM_REQ_MAINTS1%2fmanifest.json",
+    "versionJsonPath": "MM_REQ_MAINTS1%2fversion.json",
+    "minUI5Version": "1.48.1"
+  }
+}

@@ -1,0 +1,119 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0"
+		},
+		"title": "{{appTitle}}",
+		"sourceTemplate": {
+			"id": "fioriexttemplate.replaceservicecomponent",
+			"version": "1.4.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "/sap/opu/odata/sap/ZZMMPUR_REQ_SSP_MAINTAIN_SRV/",
+				"settings": {
+					"localUri": "./localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://task",
+			"favIcon": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb,sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"resources": {
+			"css": [
+				{
+					"uri": "css/ItemDetails.css"
+				}
+			]
+		},
+		"dependencies": {
+			"minUI5Version": "1.48.1",
+			"libs": {
+				"sap.ui.s2p.mm.lib.reuse.accounting": {
+					"minVersion": "10.5.0"
+				}
+			},
+			"components": {
+				"sap.ui.s2p.mm.lib.reuse.accounting.component": {
+					"minVersion": "10.5.0"
+				}
+			}
+		},
+		"extends": {
+			"component": "ui.s2p.mm.requisition.maintain.s1",
+			"extensions": {
+				"sap.ui.viewReplacements": {
+					"ui.s2p.mm.requisition.maintain.s1.view.ItemDetails": {
+						"viewName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.view.ItemDetailsCustom",
+						"type": "XML"
+					},
+					"ui.s2p.mm.requisition.maintain.s1.view.SourceOfSupply": {
+						"viewName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.view.SourceOfSupplyCustom",
+						"type": "XML"
+					},
+					"ui.s2p.mm.requisition.maintain.s1.view.Account_Asisgnment_Detail": {
+						"viewName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.view.Account_Asisgnment_DetailCustom",
+						"type": "XML"
+					},
+					"ui.s2p.mm.requisition.maintain.s1.view.Freetext": {
+						"viewName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.view.FreetextCustom",
+						"type": "XML"
+					}
+				},
+				"sap.ui.controllerExtensions": {
+					"ui.s2p.mm.requisition.maintain.s1.controller.ItemDetails": {
+						"controllerName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.controller.ItemDetailsCustom"
+					},
+					"ui.s2p.mm.requisition.maintain.s1.controller.Account_Asisgnment_Detail": {
+						"controllerName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.controller.Account_Asisgnment_DetailCustom"
+					},
+					"ui.s2p.mm.requisition.maintain.s1.controller.Freetext": {
+						"controllerName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.controller.FreetextCustom"
+					}
+				}
+			}
+		},
+		"componentUsages": {
+			"attachmentReuseComponent": {
+				"name": "sap.se.mi.plm.lib.attachmentservice.attachment",
+				"settings": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ui.s2p.mm.requisition.maintain.s1.MM_REQ_MAINTS1Extension.i18n.i18n"
+				}
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zmm_req_maints1",
+		"_version": "1.1.0"
+	}
+}
