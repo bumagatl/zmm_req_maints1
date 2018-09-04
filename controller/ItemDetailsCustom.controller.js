@@ -1752,7 +1752,8 @@ sap.ui.define([
 				// Bind Rows
 				oTable.bindRows({
 					path: sPath,
-					filters: [new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, sAccount)]
+					filters: [new sap.ui.model.Filter("DraftUUID", sap.ui.model.FilterOperator.EQ, this.itemDraftUUID),
+					new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, sAccount)]
 				});
 			} else {
 				oTable.bindRows(sPath);
@@ -1979,7 +1980,8 @@ sap.ui.define([
 				sField = "BPNumber";
 				sPath = "/DeliveryAddressSet";
 				aFilters = [new sap.ui.model.Filter(sField, sap.ui.model.FilterOperator.EQ, sFilterValue),
-					new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, sAccount)];
+					new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, sAccount),
+					new sap.ui.model.Filter("DraftUUID", sap.ui.model.FilterOperator.EQ, this.itemDraftUUID)];
 			}
 			
 			if (sFilterValue === ""){
@@ -2011,7 +2013,8 @@ sap.ui.define([
 			}
 			
 			var aFilters = [new sap.ui.model.Filter("BPNumber", sap.ui.model.FilterOperator.EQ, sInput),
-					new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, oAccAssInput)];
+					new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, oAccAssInput),
+					new sap.ui.model.Filter("DraftUUID", sap.ui.model.FilterOperator.EQ, this.itemDraftUUID)];
 			
 			oModel.read("/DeliveryAddressSet", {
 				filters: aFilters,
@@ -2050,7 +2053,8 @@ sap.ui.define([
 					oTable.bindRows({
 						path: "/DeliveryAddressSet",
 						filters: [new sap.ui.model.Filter("BPNumber", sap.ui.model.FilterOperator.EQ, oDelAddFilter),
-							new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, this.sAccAssign)]
+							new sap.ui.model.Filter("Type", sap.ui.model.FilterOperator.EQ, this.sAccAssign),
+							new sap.ui.model.Filter("DraftUUID", sap.ui.model.FilterOperator.EQ, this.itemDraftUUID)]
 						});
 				}
 
